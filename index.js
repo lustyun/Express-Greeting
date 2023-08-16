@@ -2,13 +2,6 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-const plants = [
-    "Monstera Deliciosa",
-    "Corpse Flower",
-    "Elephant-Foot Yam",
-    "Witches' Butter",
-];
-
 app.get("/greeting", (req, res) => {
     res.send("<h1>Hello, stranger!</h1>");
 });
