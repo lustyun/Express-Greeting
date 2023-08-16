@@ -10,12 +10,10 @@ const plants = [
 ];
 
 app.get("/greeting", (req, res) => {
-    //this will never be reached
     res.send("<h1>Hello, stranger!</h1>");
 });
 
 app.get("/greeting/:name", (req, res) => {
-    //this will never be reached
     res.send(`<h1>Hello there, ${req.params.name}!</h1>`);
 });
 
