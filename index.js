@@ -44,7 +44,7 @@ app.get("/tip/:total/:percent", (req, res) => {
 });
 
 app.get("/magic/:question", (req, res) => {
-    res.send(`<h1>You asked: Will I be a millionair??</h1>
+    res.send(`<h1>${req.params.question}</h1>
     <br>
     <h1>Response: ${response[Math.round(Math.random() * response.length)]}</h1>
     `);
